@@ -1,4 +1,3 @@
-import 'package:exemplo/pages/widget/app_bar.dart';
 import 'package:exemplo/pages/widget/drawer_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: MyAppBar(),
+        appBar: AppBar(),
         drawer: const MyDrawer(),
         body: Column(children: [
           Container(
@@ -36,14 +35,14 @@ class HomePage extends StatelessWidget {
               child: SingleChildScrollView(
             child: Column(children: [
               Text(
-                '\nSeu título Aqui\n',
+                '\nExercícios em Flutter\n',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
-                'Texto aqui',
+                'Resolvendo exercícios em flutter e usando esse App para mostrar meu progresso.',
                 style: TextStyle(
                   fontSize: 14,
                 ),

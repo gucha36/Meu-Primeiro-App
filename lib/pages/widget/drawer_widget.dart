@@ -1,7 +1,8 @@
-import 'package:exemplo/pages/contacts_page.dart';
+import 'package:exemplo/pages/nivel_dificil.dart';
+import 'package:exemplo/pages/nivel_facil.dart';
 import 'package:exemplo/pages/home_page.dart';
 import 'package:exemplo/pages/live_sense_page.dart';
-import 'package:exemplo/pages/rotas_page.dart';
+import 'package:exemplo/pages/intermediario.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatefulWidget {
@@ -33,7 +34,7 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
           ),
           ListTile(
-            title: const Text('Sobre nós'),
+            title: const Text('Sobre o APP'),
             trailing: const Icon(Icons.arrow_forward),
             onTap: () {
               Navigator.push(
@@ -43,7 +44,7 @@ class _MyDrawerState extends State<MyDrawer> {
             },
           ),
           ListTile(
-            title: const Text('Página 1'),
+            title: const Text('Teste de câmera'),
             trailing: const Icon(Icons.arrow_forward),
             onTap: () {
               Navigator.push(
@@ -53,22 +54,33 @@ class _MyDrawerState extends State<MyDrawer> {
             },
           ),
           ListTile(
-            title: const Text('Página 2'),
+            title: const Text('Nível Fácil'),
             trailing: const Icon(Icons.arrow_forward),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Rotas()),
+                MaterialPageRoute(builder: (context) => const NivelFacil()),
               ); // Adicione a ação desejada quando o Item 3 for selecionado
             },
           ),
           ListTile(
-            title: const Text('Página 3'),
+            title: const Text('Nível Intermidiário'),
             trailing: const Icon(Icons.arrow_forward),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Contatos()),
+                MaterialPageRoute(
+                    builder: (context) => const NivelIntermediario()),
+              ); // Adicione a ação desejada quando o Item 3 for selecionado
+            },
+          ),
+          ListTile(
+            title: const Text('Nível Difícil'),
+            trailing: const Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const NivelDificil()),
               ); // Adicione a ação desejada quando o Item 3 for selecionado
             },
           ),

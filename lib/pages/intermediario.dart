@@ -1,15 +1,14 @@
-import 'package:exemplo/pages/widget/app_bar.dart';
 import 'package:exemplo/pages/widget/drawer_widget.dart';
 import 'package:flutter/material.dart';
 
-class Contatos extends StatelessWidget {
+class NivelIntermediario extends StatelessWidget {
   // ignore: use_key_in_widget_constructors
-  const Contatos({Key? key});
+  const NivelIntermediario({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: MyAppBar(),
+        appBar: AppBar(),
         drawer: const MyDrawer(),
         // Substitua pelo seu AppBar customizado
         body: Column(

@@ -1,8 +1,6 @@
-import 'package:exemplo/pages/widget/app_bar.dart';
 import 'package:exemplo/pages/widget/camera_widget.dart';
 
 import 'package:exemplo/pages/widget/drawer_widget.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LiveSense extends StatelessWidget {
@@ -12,7 +10,7 @@ class LiveSense extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: AppBar(),
       drawer: const MyDrawer(),
       // Substitua pelo seu AppBar customizado
       body: Column(

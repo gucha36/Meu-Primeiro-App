@@ -1,4 +1,3 @@
-import 'package:exemplo/pages/widget/app_bar.dart';
 import 'package:exemplo/pages/widget/drawer_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
@@ -81,10 +80,8 @@ class _CameraPageState extends State<CameraPage> {
               )
             : const CircularProgressIndicator(),
       ),
-        appBar: MyAppBar(),
-        drawer: const MyDrawer(),
-        
-        
+      appBar: AppBar(),
+      drawer: const MyDrawer(),
     );
   }
 }
